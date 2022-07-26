@@ -5,6 +5,10 @@
   border: 0;
 }
 
+:focus {
+  outline: none;
+}
+
 ::selection {
   background-color: var(--primary);
 }
@@ -410,6 +414,7 @@ img {
   width: 100vw;
   height: 0vh;
   z-index: 40;
+  display: flex;  
   overflow: hidden;
   transition: .4s;
   padding: 90px 0 5vh 5vw;
@@ -417,6 +422,7 @@ img {
 }
 
 .mdisplay {
+  width: 100vw;
   top: 0;
   height: 100vh;
 }
@@ -551,7 +557,7 @@ img {
   width: 100px;
   position: relative;
   left: 85%;
-align-items: center;
+  align-items: center;
 }
 
 .elipsis {
@@ -667,7 +673,7 @@ img.arrow_down {
   text-align: center;
 }
 
-.vw12{
+.vw12 {
   width: 12vw;
 }
 
@@ -919,7 +925,7 @@ img.arrow_down {
   margin: 80px 50px 0 0;
 }
 
-.middle_img_container{
+.middle_img_container {
   width: 10vw;
 }
 
@@ -1147,6 +1153,7 @@ img.arrow_down {
 }
 
 .second_line {
+  margin-top: 1.3vw;
   position: absolute;
   right: 0;
   top: 100px;
@@ -1591,8 +1598,6 @@ img.arrow_down {
 }
 
 .footer_cpr div {
-  border: 1px solid rgba(255, 255, 255, 0.414);
-  border-bottom: 0;
   height: 100%;
 }
 
@@ -1616,12 +1621,14 @@ img.arrow_down {
 }
 
 .cpr_center {
+  border: 1px solid rgba(255, 255, 255, 0.414);
+  border-bottom: 0;
   display: grid;
 }
 
 .cpr_left {
   line-height: 40px;
-  border-left: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.414);
   font-size: 14px;
   padding-left: 7vw;
 }
@@ -1630,7 +1637,9 @@ img.arrow_down {
   display: flex;
   justify-content: flex-end;
   gap: 15px;
+  border-right: 0;
   padding-right: 7vw;
+  border-top: 1px solid rgba(255, 255, 255, 0.414);
 }
 
 .social_link a {
@@ -1827,21 +1836,23 @@ img.arrow_down {
 .c1sumbartext {
   font-size: 9vw;
   text-transform: uppercase;
-  width: max-content;
+  width: calc(98vw + 60px);
   color: #D1C8AD;
-  overflow-x: scroll;
+  overflow: hidden;
   margin-left: -100px;
   margin-top: 200px;
   margin-bottom: -6vh;
 }
 
-.c1sumbartext p {
+.c1sumbartext .p {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  overflow: hidden;
   gap: 20px;
 }
 
-.c1sumbartext p span {
+.c1sumbartext .p span {
   display: inline-block;
   width: 150px;
   height: 6px;
@@ -1857,11 +1868,11 @@ img.arrow_down {
   grid-template-columns: repeat(3, 30%);
 }
 
-.c1el_img{
+.c1el_img {
   position: relative;
 }
 
-.img_anec{
+.img_anec {
   position: absolute;
   left: 90%;
   bottom: 0;
@@ -1988,15 +1999,15 @@ img.arrow_down {
   gap: 20px;
 }
 
-.c2head_img1{
+.c2head_img1 {
   width: 30vw;
 }
 
-.c2head_img2{
+.c2head_img2 {
   width: 20vw;
 }
 
-.c2head_img3{
+.c2head_img3 {
   width: 10vw;
 }
 
@@ -2078,11 +2089,17 @@ img.arrow_down {
 .gal_gtxt {
   font-family: "Recoleta Thin";
   font-size: 11vw;
-  width: 150vw;
+  width: 100vw;
   letter-spacing: 10px;
   transform: translateX(-2%);
   margin-bottom: -7%;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.gal_gtxt span{
+  display: block;
+  width: 130vw;
+
 }
 
 .gal_imgs {
@@ -2100,11 +2117,11 @@ img.arrow_down {
   transform: translate(-50%, 60%);
 }
 
-.gal1{
+.gal1 {
   width: 35vw;
 }
 
-.gal2{
+.gal2 {
   width: 20vw;
 }
 
@@ -2288,6 +2305,7 @@ img.arrow_down {
   padding: 500px 0 90px 4vw;
   justify-content: space-between;
   z-index: -1;
+  overflow: hidden;
 }
 
 .c3gal_leftsec {

@@ -414,7 +414,7 @@ img {
   width: 100vw;
   height: 0vh;
   z-index: 40;
-  display: flex;  
+  display: flex;
   overflow: hidden;
   transition: .4s;
   padding: 90px 0 5vh 5vw;
@@ -1836,7 +1836,6 @@ img.arrow_down {
 .c1sumbartext {
   font-size: 9vw;
   text-transform: uppercase;
-  width: calc(98vw + 60px);
   color: #D1C8AD;
   overflow: hidden;
   margin-left: -100px;
@@ -1849,6 +1848,7 @@ img.arrow_down {
   flex-direction: row;
   align-items: center;
   overflow: hidden;
+  width: calc(92vw + 200px);
   gap: 20px;
 }
 
@@ -2096,7 +2096,7 @@ img.arrow_down {
   overflow-x: hidden;
 }
 
-.gal_gtxt span{
+.gal_gtxt span {
   display: block;
   width: 130vw;
 
@@ -2180,6 +2180,10 @@ img.arrow_down {
   margin: 100px auto;
 }
 
+.col3container {
+  margin: 0 auto;
+}
+
 .col3leftimgs {
   left: 0;
   top: 0%;
@@ -2207,7 +2211,7 @@ img.arrow_down {
   justify-content: space-between;
   justify-items: center;
   text-align: center;
-  margin: 0px auto;
+  margin-inline: auto;
   z-index: 6;
 }
 

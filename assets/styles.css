@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 0;
 }
 
 :focus {
@@ -392,6 +391,7 @@ img {
   cursor: pointer;
   justify-content: space-between;
   z-index: 50;
+  border: none;
 }
 
 .burger_line {
@@ -448,6 +448,7 @@ img {
   background-color: transparent;
   font-size: 15px;
   cursor: pointer;
+  border: none;
 }
 
 .shopping_number {
@@ -2851,7 +2852,7 @@ img.arrow_down {
 }
 
 .login-form{
-  padding: 20px;
+  padding-left: 50px;
   display: flex;
   align-items: center;
 }
@@ -2870,7 +2871,49 @@ img.arrow_down {
   position: absolute;
   bottom: 0;
 };
+label{
+  display: block;
+}
+ input {
+  border:solid  1px  black; 
+  display: block;
+  padding: 10px;
+}
+.login-forms{
+  padding: 50px 0;
+  font-family: "Poppins";
+}
+.login-forms  input {
+width: 100%;
+height: 45px;
 
-.form-input input {
-  border: 1px, solid black;
+}
+
+.login-forms label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.btn {
+  padding: 16px 20px;
+    width: fit-content;
+    color: var(--black-600);
+    margin: 0 auto;
+    transition: all .2s;
+}
+
+.btn-dark{
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.login-forms .btn{
+ border: none;
+ padding: 20px 50px;
+}
+
+.login-forms button{
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
 }

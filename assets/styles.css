@@ -3035,7 +3035,7 @@ height: 45px;
 
 .item_box{
   padding: 25px 0;
-  max-width: 350px;
+  min-width: 350px;
 }
 
 .item__row {
@@ -3183,4 +3183,51 @@ text-align: right;
 
 .text-red{
   color: var(--red);
+}
+.history .history-table .item__row {
+  border: 1px solid var(--border-gray);
+  margin-bottom: 20px;
+}
+
+.history .history-table .item_box {
+padding: 18px;
+min-width: 300px;
+}
+
+.history .history-table .price-table {
+  min-width: 100px;
+}
+
+.history .history-table .quantity {
+  min-width: 100px;
+}
+
+.item-table .remove-table{
+  padding: 25px;
+}
+
+.item-table .invoice, .item-table .date, .history .history-table .quantity {
+  padding-left: 20px
+}
+
+
+.text-center{
+  text-align: center;
+}
+
+
+.info-table .content{
+  text-align: right;
+}
+
+.info-table tr td{
+padding: 10px 0;
+}
+.cart-info{
+  margin-bottom: 20px;
+}
+.delivery-option {
+  padding: 30px 0;
+  border-top: 1px solid var(--border-gray);
+  border-bottom: 1px solid var(--border-gray);
 }

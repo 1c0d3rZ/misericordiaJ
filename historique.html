@@ -51,7 +51,7 @@
 
     <div class="hero d-flex wrapper-fluid">
         <div class="hero-title">
-           Facturation
+           Mon compte
         </div>
    </div>
 
@@ -59,7 +59,8 @@
 
    <div class="bordered_subnav wrapper-fluid d-flex justify-center">
         <div class="col-unit-6 back-arrow">
-           <span class="icon">-</span> Retour
+           <span class="icon">0</span> 
+           Jo O'Khafor
         </div>
 
         <div class="col-unit-6 subnav-links d-flex">
@@ -70,15 +71,16 @@
         </div>
    </div>
     
-     <div class="content_wrap wrapper-fluid">
+     <div class="content_wrap wrapper-fluid ">
          
-        <div class="item-table">
-            <table class="list-item cart-item  w-100">
+        <div class="item-table history">
+            <table class="list-item history-table w-100">
                 <tr class="item-table__header">
                   <th>Article</th>
                   <th class="price-title">Prix</th>
-                  <th>Quantité</th>
-                  <th>Total</th>
+                  <th class="text-center">Quantité</th>
+                  <th>Date</th>
+                  <th>Facture</th>
                   <th></th>
                 </tr>
                 <tr class="item__row">
@@ -93,29 +95,23 @@
                     </div>
                   </td>
                   <td class="price-table">6850 FCFA</td>
-                  <td class="quantity">
-                    <div class="qty-box d-flex justify-center">
-                        <div class="decrease">
-                            -
-                        </div>
-                        <div class="qty">
+                  <td class="quantity text-center">
+                    
                             2
-                        </div>
-                        <div class="increase">
-                            +
-                        </div>
-                    </div>
                   </td>
-                  <td class="price-total">
-                    6850 FCFA
+                  <td class="date">
+                    02.12.2022
+                </td>
+                <td class="invoice">
+                    Facture
                 </td>
                   <td class="remove-table"> 
                     <span>
-                        x 
+                         x
                     </span>
                   </td>
                 </tr>
-
+                 <tr aria-colspan="5" style="height: 20px;"></tr>
                 <tr class="item__row">
                     <td class="item_box">
                       <div class="list-item-box">
@@ -128,72 +124,25 @@
                       </div>
                     </td>
                     <td class="price-table">6850 FCFA</td>
-                    <td class="quantity">
-                      <div class="qty-box d-flex justify-center">
-                          <div class="decrease">
-                              -
-                          </div>
-                          <div class="qty">
+                    <td class="quantity text-center">
                               2
-                          </div>
-                          <div class="increase">
-                              +
-                          </div>
-                      </div>
                     </td>
-                    <td class="price-total">
-                      6850 FCFA
+                    <td class="date">
+                        12.21.2022
                   </td>
+                  <td class="invoice">
+                   Facture
+                </td>
                     <td class="remove-table"> 
                       <span>
                         x 
                       </span>
                     </td>
                   </tr>
-                  <tr class="item__row total-row">
-                    <td colspan="3" class="total-title">
-                       Total
-                    </td>
-                    <td colspan="2" class="cart-total "> 
-                     <span class="total-price">
-                        6859 FCFA
-                     </span>
-                    </td>
-                  </tr>
+                
                
               </table>
-              <div class="cart-resume d-flex">
-                <div class="col-unit-4 promo-input">
-                    <form  action="">
-                        <label for="">CODE PROMO</label>
-                        <div class="d-flex">
-                            <input type="text" name="" id="" placeholder="Entrer un code promo">
-                            <button class="promo-input__btn" type="submit"> 
-                                 
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-unit-4 promo-rate">
-                   <p> Réduction de : <span class="text-red">15%</span></p>
-                </div>
-                <div class="col-unit-4 final-total">
-                        <div class="promo-group">
-                            <div class="d-flex promo-prices">
-                                <span class="current-price">
-                                    6859 FCFA
-                                </span>
-
-                                <span class="promo-price d-flex">
-                                    6859 FCFA
-                                </span>
-                        </div>
-                        <div class="next">
-                            <a class="btn btn-dark " href="http://">Continuer</a>
-                        </div>
-                   </div>
-                </div>
-              </div>
+           
           </div>
      </div>
    

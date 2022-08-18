@@ -49,6 +49,10 @@ body {
   overflow-x: hidden;
 }
 
+button {
+  border: none;
+}
+
 ul {
   list-style: none;
 }
@@ -354,12 +358,7 @@ img {
 }
 
 /* Begin navigation bar design */
-.w-100{
-  width: 100%;
-}
-.wrapper {
 
-}
 .inner-page {
   background-color: var(--inner-page__bg);
 }
@@ -574,6 +573,7 @@ img {
 }
 
 .categories_section {
+  font-family: "Recoleta Regular";
   position: relative;
   color: var(--secondary);
   text-align: center;
@@ -601,13 +601,16 @@ img {
 
 .last_center_section {
   margin-top: -10px;
+  margin-inline: auto;
   display: block;
+  width: 80%;
   color: var(--white);
   text-transform: uppercase;
+  z-index: 4;
 }
 
 .anecdotes {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   font-size: 11px;
   color: #CFB09C;
   margin-left: 150px;
@@ -779,6 +782,7 @@ img.arrow_down {
   top: 50%;
   left: -0%;
   width: 20%;
+  max-width: 190px;
   height: 5px;
   background-color: var(--black);
 }
@@ -978,6 +982,7 @@ img.arrow_down {
 }
 
 .great_middle_title {
+  font-family: "Recoleta Regular";
   font-size: 3.5vw;
   width: 100%;
 }
@@ -1067,10 +1072,11 @@ img.arrow_down {
 }
 
 .selling_gtitle {
+  font-family: "Recoleta Regular";
   display: block;
   position: relative;
   left: 7vw;
-  font-size: 4.5vw;
+  font-size: 5.5vw;
   width: 75%;
   height: fit-content;
   letter-spacing: 1px;
@@ -1132,6 +1138,7 @@ img.arrow_down {
 }
 
 .natskin_gtext {
+  font-family: "Recoleta Regular";
   position: absolute;
   font-size: 4.3vw;
   width: 200%;
@@ -1198,6 +1205,7 @@ img.arrow_down {
 }
 
 .second_sell_head_content {
+  font-family: "Recoleta Regular";
   padding: 90px 100px;
   margin-bottom: 100px;
   color: #5b4749;
@@ -1321,6 +1329,7 @@ img.arrow_down {
 }
 
 .spring_ltext {
+  font-family: "Recoleta Regular";
   position: absolute;
   top: 6%;
   left: 15%;
@@ -1330,6 +1339,7 @@ img.arrow_down {
 }
 
 .c_gtext {
+  font-family: "Recoleta Regular";
   position: absolute;
   font-size: 8vw;
   right: 10%;
@@ -1415,6 +1425,7 @@ img.arrow_down {
 }
 
 .comment_text_container {
+  font-family: "Recoleta Regular";
   position: relative;
   z-index: 3;
   margin: 100px auto 30px;
@@ -2901,6 +2912,15 @@ img.arrow_down {
 
 .side-cover{
   background: var(--coffee);
+}
+
+.side-cover-img{
+  object-fit: cover;
+  object-position: center center;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .login-form{
